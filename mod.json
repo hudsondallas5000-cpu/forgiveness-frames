@@ -1,0 +1,35 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "custom.forgiveness-frames",
+	"name": "Forgiveness Frames",
+	"version": "v1.0.0",
+	"developer": "You",
+	"description": "Survive hazards for 1-8 physics ticks before dying.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"description": "Turn forgiveness frames on or off.",
+			"default": true
+		},
+		"frames": {
+			"type": "int",
+			"name": "Forgiveness Ticks",
+			"description": "How many consecutive physics ticks you can touch a hazard and survive. You die on the tick after this.",
+			"default": 4,
+			"min": 1,
+			"max": 8,
+			"control": {
+				"slider": true,
+				"slider-step": 1,
+				"arrows": true
+			}
+		}
+	}
+}
